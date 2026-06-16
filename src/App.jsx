@@ -12,7 +12,7 @@ function App() {
           <a href="">Admin</a>
         </p>
 
-        <button>Entar</button>
+        <button>Entrar</button>
       </header>
       <hr />
       <main>
