@@ -53,6 +53,7 @@ header button:hover{
 main {
     justify-content: center;
     color: white;
+    flex-grow: 1;
 }
 
 .headline{
@@ -101,4 +102,52 @@ main {
 .agend-buttons button:hover{
     background-color: rgba(128, 128, 128, 0.437);
     cursor: pointer;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.image{
+    font-size: x-large;
+}
+
+.button-services{
+    font-size: medium;
+    text-align: start;
+    gap: 80px;
+    color: white;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 9px;
+    width: 13%;
+    transition: transform 0.3s ease;
+}
+
+.button-services:hover{
+    cursor: pointer;
+    border: 0.1px solid #C9A84C;
+    transform: translate(0px, -10px);
+}
+
+.service-money{
+    color: #C9A84C;
+}
+
+.service-min{
+    color: gray;
+}
+
+footer{
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: small;
 }
