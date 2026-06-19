@@ -1,0 +1,153 @@
+@import url('https://googleapis.com');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    font-family: Inter;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    font-family: DM Serif Display;
+}
+
+header p{
+    display: flex;
+    gap: 80px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(154, 154, 154);
+}
+
+header a:hover{
+    color: white;
+}
+
+header button{
+    padding: 9px;
+    width: 80px;
+    color: white;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 0.1px solid;
+
+}
+
+header button:hover{
+    background-color: rgba(128, 128, 128, 0.437);
+    cursor: pointer;
+}
+
+main {
+    justify-content: center;
+    color: white;
+    flex-grow: 1;
+}
+
+.headline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #C9A84C;
+}
+
+.linha-horizontal {
+  border-bottom: 1px solid #C9A84C; 
+  margin: 30px 0;                
+  width: 6%;
+  gap: 30px;        
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    color: gray;
+}
+
+.agend-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.agend-buttons button{
+    border-radius: 9px;
+    border: 0.1 solid;
+    padding: 9px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.agend-buttons button:hover{
+    background-color: rgba(128, 128, 128, 0.437);
+    cursor: pointer;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.image{
+    font-size: x-large;
+}
+
+.button-services{
+    font-size: medium;
+    text-align: start;
+    gap: 80px;
+    color: white;
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 9px;
+    width: 13%;
+    transition: transform 0.3s ease;
+}
+
+.button-services:hover{
+    cursor: pointer;
+    border: 0.1px solid #C9A84C;
+    transform: translate(0px, -10px);
+}
+
+.service-money{
+    color: #C9A84C;
+}
+
+.service-min{
+    color: gray;
+}
+
+footer{
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
