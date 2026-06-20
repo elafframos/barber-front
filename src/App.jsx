@@ -1,6 +1,6 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Link, Navigate} from 'react-router-dom'
 import Home from './pages/home';
-
+import Login from './pages/login';
 import './App.css'
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home/>}> </Route>
+
+        <Route path="/login" element={<Login/>}> </Route>
 
       </Routes>
      </Router>
