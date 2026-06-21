@@ -17,13 +17,20 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-family: DM Serif Display;
+}
+
+h1{
+    font-size: large;
+}
+header span{
+    color: #C9A84C;
 }
 
 header p{
     display: flex;
-    gap: 80px;
+    gap: 50px;
 }
 
 header a{
@@ -32,57 +39,24 @@ header a{
 }
 
 header a:hover{
+    cursor: pointer;
     color: white;
 }
 
 header button{
+    font-size: smaller;
     padding: 9px;
     width: 80px;
     color: white;
     background-color: transparent;
     border-radius: 6px;
-    border: 0.1px solid;
+    border:thin solid rgba(82, 82, 82, 0.9);
 
 }
 
 header button:hover{
     background-color: rgba(128, 128, 128, 0.437);
     cursor: pointer;
-}
-
-main {
-    justify-content: center;
-    color: white;
-    flex-grow: 1;
-}
-
-.headline{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    color: #C9A84C;
-}
-
-.linha-horizontal {
-  border-bottom: 1px solid #C9A84C; 
-  margin: 30px 0;                
-  width: 6%;
-  gap: 30px;        
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.sub-title{
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    color: gray;
 }
 
 .agend-buttons{
@@ -97,6 +71,7 @@ main {
     padding: 9px;
     background-color: transparent;
     color: rgb(255, 255, 255);
+    border:thin solid rgba(82, 82, 82, 0.9);
 }
 
 .agend-buttons button:hover{
@@ -125,11 +100,12 @@ main {
     border-radius: 9px;
     width: 13%;
     transition: transform 0.3s ease;
+    border:thin solid rgba(82, 82, 82, 0.9);
 }
 
 .button-services:hover{
     cursor: pointer;
-    border: 0.1px solid #C9A84C;
+    border:thin solid #c9a84c;
     transform: translate(0px, -10px);
 }
 
@@ -139,6 +115,10 @@ main {
 
 .service-min{
     color: gray;
+}
+
+hr{
+    border:thin solid rgba(255, 255, 255, 0.1);
 }
 
 footer{
