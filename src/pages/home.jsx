@@ -8,7 +8,6 @@ function Home() {
   return (
     <>
       <Navbar />
-      <hr />
       <main> 
 
         <p className='headline'>

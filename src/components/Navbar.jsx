@@ -17,6 +17,8 @@ function Navbar(){
 
                <button onClick={() => navigate('/login')}>Entrar</button>
             </header>
+
+            <hr />
         </>
     )
 }
