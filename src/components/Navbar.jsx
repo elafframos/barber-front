@@ -8,7 +8,7 @@ function Navbar(){
     return (
         <>
             <header>
-                <h1>Barber.</h1>
+                <h1>Barbers<span>.</span></h1>
                 <p>
                 <a onClick={() => navigate('/')}>Início</a>
                 <a href="">Agendar</a>

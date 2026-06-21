@@ -20,10 +20,14 @@ main {
 }
 
 .title{
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-self: center;
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title span{
+    color: #C9A84C;
 }
 
 .sub-title{

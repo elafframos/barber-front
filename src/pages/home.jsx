@@ -16,7 +16,7 @@ function Home() {
 
         <p className='title'>
           O corte certo, <br />
-          na hora certa.
+          na hora <span>certa.</span>
         </p>
 
         <br />
