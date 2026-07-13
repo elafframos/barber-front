@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Footer from '../components/Footer'
 import StepService from "../components/StepService";
 import StepDateTime from "../components/StepDateTime";
+import StepConfirm from "../components/StepConfirm";
 import styles from "./Booking.module.css";
 import { useState } from "react";
 
@@ -66,7 +67,8 @@ function Agendar(){
                 </div>
             </main>
             {ativo === 1 && <StepService onSelect={(servico) => { setEscolhido(servico); setAtivo(2) }}/>}
-            {ativo === 2 && <StepDateTime onSelect={(servico) => { setEscolhido(servico); setAtivo(3) }}/>}
+            {ativo === 2 && <StepDateTime onSelect={(servico) => { setEscolhido(servico); setAtivo(3) }} onBack={() => { setAtivo(1) }}/>}
+            {ativo === 3 && <StepConfirm onSelect={(servico) => { setEscolhido(servico); setAtivo(4) }}/>}
 
             <Footer/>
         </>

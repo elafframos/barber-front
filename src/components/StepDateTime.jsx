@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../pages/Booking.module.css";
 import dateStyles from "../components/date.module.css"
 
-function StepDateTime({onselct}){
+function StepDateTime({onSelect, onBack}){
     const meses = [
         'Janeiro', 'Fevereiro', 'Março', 'Abril', 
         'Maio', 'Junho', 'Julho', 'Agosto',
@@ -16,14 +16,9 @@ function StepDateTime({onselct}){
     const primeiroDia = new Date(ano, mes , 1).getDay();
 
     function handleNext(){
-        if(!estado){
-            alert('Escolha um dos serviços abaixo!')
-        } else {
-            onSelect()
-        }
+        onSelect()
     }
 
-    
 return (
     <>
         <main className={dateStyles.main}> 
@@ -76,7 +71,7 @@ return (
             
             <div className={dateStyles.center}>
                 <div className={dateStyles.buttons}>
-                    <button className={dateStyles.buttonBack} >Voltar</button>
+                    <button className={dateStyles.buttonBack} onClick={onBack}>Voltar</button>
                     <button className={dateStyles.button} onClick={handleNext}>Confirmar agendamento</button>
                 </div>
             </div>
