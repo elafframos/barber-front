@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../pages/Booking.module.css";
 
-function StepService(){
+function StepService({onSelect}){
     // Para deixar os sevições selecionados
     const [estado, setEstado] = useState('')
 
@@ -15,7 +15,7 @@ function StepService(){
         if(!estado){
             alert('Escolha um dos serviços abaixo!')
         } else {
-            
+            onSelect(estado)
         }
     }
  
@@ -23,31 +23,6 @@ return (
     <>
         <main className={styles.main}>  
             <div className={styles.content}>
-                    <div className={styles.numbers}>
-                        <div className={styles.nav}>
-                            <span className={styles.span}>
-                                1 
-                            </span>
-                            <p>Serviço</p>
-                        </div>
-                        <div className={styles.linha}></div>
-
-                        <div className={styles.nav}>
-                            <span className={styles.span}>
-                                2 
-                            </span>
-                            <p>Data e Hora</p>
-                        </div>
-                        <div className={styles.linha}></div>
-
-                        <div className={styles.nav}>
-                            <span className={styles.span}>
-                                3 
-                            </span>
-                            <p>Confirmar</p>
-                        </div>
-                    </div>
-
                     <br />
                     <br />
                 <div className={styles.each}>

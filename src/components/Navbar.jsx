@@ -5,6 +5,11 @@ function Navbar(){
 
     const navigate = useNavigate()
 
+    function Carregamento(){
+        {Array.from({ length: 5 }, (_, index) => (
+        <span key={index}>Carregando conteudo...</span>))}
+    }
+
     return (
         <>
             <header>

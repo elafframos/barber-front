@@ -103,3 +103,21 @@
     cursor: pointer;
     background-color: rgba(128, 128, 128, 0.063);
 }
+
+.progress{
+    border:thin solid #c9a84c;
+    color: #C9A84C;
+}
+
+.complet{
+    background-color: #c9a84c;
+    color: rgb(0, 0, 0);
+}
+
+.progressText{
+    color: #c9a84c;
+}
+
+.completLinha{
+    background-color: #c9a84c;
+}
