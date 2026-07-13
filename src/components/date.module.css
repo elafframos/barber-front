@@ -1,0 +1,116 @@
+.main{
+    text-decoration: none;
+}
+
+.section{
+    display: block;
+    justify-self: center;
+    width: 30%;
+    font-size: large;
+}
+
+.seta{
+    cursor: pointer;
+    font-size: xx-large;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.seta:hover{
+    color: rgb(164, 164, 164);
+}
+
+
+.dataTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataWeek{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.days{
+    display: grid;
+    cursor: pointer;
+    padding: 6px;
+    gap: 90px;
+    border-radius: 8px;
+}
+
+.days:hover{
+    background-color: rgba(128, 128, 128, 0.389);
+}
+
+.h5{
+    color: gray;
+}
+
+.time{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.hours{
+    border:thin solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hours:hover{
+    border:thin solid #C9A84C;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 32%;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 9px;
+    cursor: pointer;
+    background-color: #C9A84C;
+    font-size: medium;
+    border: none;
+    width: 65%;
+}
+
+.button:hover{
+    background-color: #ad9041;
+}
+
+.buttonBack{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 9px;
+    border:thin solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    background-color: #c9a84c00;
+    font-size: medium;
+    color: white;
+    width: 45%;
+}
+
+.buttonBack:hover{
+    border:thin solid #C9A84C;
+}

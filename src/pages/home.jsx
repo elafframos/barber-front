@@ -2,8 +2,11 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ServiceCard from '../components/ServiceCard'
 import './Home.css'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate()
 
   return (
     <>
@@ -30,7 +33,7 @@ function Home() {
         <br />
 
         <p className='agend-buttons'>
-          <button>Agendar agora</button>
+          <button onClick={() => navigate('/agendar')}>Agendar agora</button>
 
           <button>Ver meus agendamentos</button>
         </p>
