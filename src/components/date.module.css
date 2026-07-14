@@ -114,3 +114,8 @@
 .buttonBack:hover{
     border:thin solid #C9A84C;
 }
+
+.cardSelected{
+    background-color: #C9A84C;
+    color: black;
+}
