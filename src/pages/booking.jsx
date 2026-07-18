@@ -37,8 +37,7 @@ function Agendar(){
         <>
             <Navbar/>
             <br />
-            <br />
-            <main className={styles.main}>  
+            <div className={styles.main}>  
                 <div className={styles.content}>
                     <div className={styles.numbers}>
                         <div className={styles.nav}>
@@ -65,7 +64,7 @@ function Agendar(){
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
             {ativo === 1 && <StepService onSelect={(servico) => { setEscolhido(servico); setAtivo(2) }}/>}
             {ativo === 2 && <StepDateTime onSelect={(servico) => { setEscolhido(servico); setAtivo(3) }} onBack={() => { setAtivo(1) }}/>}
             {ativo === 3 && <StepConfirm onSelect={(servico) => { setEscolhido(servico); setAtivo(4) }}/>}

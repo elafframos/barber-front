@@ -23,8 +23,6 @@ return (
     <>
         <main className={styles.main}>  
             <div className={styles.content}>
-                    <br />
-                    <br />
                 <div className={styles.each}>
                     <h5 className={styles.h5}>ESCOLHA O SERVIÇO</h5>
                     <div className={`${styles.card} ${Selected('corte')}`} onClick={() => setEstado('corte')}>

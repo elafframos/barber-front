@@ -6,9 +6,20 @@
     box-sizing: border-box;
 }
 
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 body{
     background-color: #111;
     font-family: Inter;
+    padding: 2px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -123,33 +134,42 @@ hr{
 
 footer{
     padding: 15px;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     color: white;
     font-size: small;
+     margin-top: auto;
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
   header p{
     display: flex;
     gap: 10px;
 }
 
+.services{
+    gap: 20px;
+}
+
+.agend-buttons{
+    gap: 20px;
+}
+
+.agend-buttons button{
+    padding: 8px;
+    width: 50%;
+}
+
   .button-services{
     font-size: small;
     text-align: start;
-    gap: 30px;
+    gap: 10px;
     padding: 8px;
     background-color: transparent;
     border-radius: 9px;
-    width: 19%;
+    width: 100%;
 }
   
 }
