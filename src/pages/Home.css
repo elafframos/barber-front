@@ -36,3 +36,10 @@ main {
     font-size: larger;
     color: gray;
 }
+
+@media (max-width: 768px) {
+  .sub-title{
+    text-align: center;
+}
+  
+}

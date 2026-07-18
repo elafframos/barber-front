@@ -119,3 +119,22 @@
     background-color: #C9A84C;
     color: black;
 }
+
+@media (max-width: 768px) {
+    .section{
+    width: 80%;
+}
+
+.buttons{
+    width: 90%;
+    gap: 10px;
+}
+
+.button {
+    width: 70%;
+}
+
+    .buttonBack{
+    width: 30%;
+}
+}

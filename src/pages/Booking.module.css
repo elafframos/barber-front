@@ -121,3 +121,9 @@
 .completLinha{
     background-color: #c9a84c;
 }
+
+@media (max-width: 768px) {
+  .main{
+    width: 90%;
+}
+}

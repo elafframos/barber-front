@@ -131,3 +131,25 @@ footer{
     color: white;
     font-size: small;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header p{
+    display: flex;
+    gap: 10px;
+}
+
+  .button-services{
+    font-size: small;
+    text-align: start;
+    gap: 30px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 9px;
+    width: 19%;
+}
+  
+}
