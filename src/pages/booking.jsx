@@ -5,6 +5,7 @@ import StepDateTime from "../components/StepDateTime";
 import StepConfirm from "../components/StepConfirm";
 import styles from "./Booking.module.css";
 import { useState } from "react";
+import { criarAgendamento } from "../services/api";
 
 function Agendar(){
     const [ativo, setAtivo] = useState(1)

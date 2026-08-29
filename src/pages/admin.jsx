@@ -5,7 +5,7 @@ function Admin(){
     return (
         <>
             <Navbar/>
-            Painel do Barbeiro
+             Painel do Barbeiro
             <Footer/>
         </>
     )
